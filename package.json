@@ -1,0 +1,51 @@
+{
+  "name": "tfs-server",
+  "version": "0.0.1",
+  "description": "Traffic Star Limited server",
+  "private": true,
+  "scripts": {
+    "local": "pm2 restart ecosystem.local.config.js",
+    "dev": "pm2 restart ecosystem.config.js --env development",
+    "dev:stop": "pm2 stop tsl-server && pm2 delete tsl-server",
+    "start": "pm2 restart ecosystem.config.js --env production"
+  },
+  "author": "lazy-load-opt",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^3.0.6",
+    "bluebird": "~3.4.6",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.3",
+    "cron": "^1.7.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "google-spreadsheet": "^3.0.11",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "mongoose": "^5.2.10",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.9.1",
+    "morgan-json": "^1.1.0",
+    "qs": "^6.9.3",
+    "query-string": "^6.8.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "stacktracey": "^2.1.7",
+    "telegraf": "^3.32.0",
+    "tunnel": "0.0.6",
+    "underscore": "^1.13.1",
+    "unique-names-generator": "4.5.0",
+    "whois": "^2.12.0",
+    "winston": "^3.2.1",
+    "winston-logsene": "^2.0.7",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "facebook-nodejs-business-sdk": "^6.0.2"
+  }
+}

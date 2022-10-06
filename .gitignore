@@ -1,0 +1,15 @@
+# Environment files
+.env
+nodemon.json
+package-lock.json
+.DS_Store
+
+# Development files
+node_modules/
+.idea/
+shared/
+spmdb/
+.vscode
+
+# Deploy files
+*.pem
