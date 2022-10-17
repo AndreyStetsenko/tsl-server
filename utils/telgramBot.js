@@ -16,7 +16,7 @@ function getChatId (type) {
     if (chats[type]) {
         return chats[type];
     } else {
-        throw new Error(`No such chat type - ${type}`);
+        // throw new Error(`No such chat type - ${type}`);
     }
 }
 
