@@ -12,7 +12,8 @@ const TEAMLEAD_ROLE = 'teamlead';
 const ADMIN_ROLE = 'admin';
 
 exports.createAdmin = async (req, res, next) => {
-  const userId = req.userData.userId ? req.userData.userId : req.body.userId;
+  const userId = req.body.userId;
+
   const { login, password, dashboardName ,secret } = { ...req.body };
 
   if (!login) return handler.errorMessage(res, 'Login is empty!');
